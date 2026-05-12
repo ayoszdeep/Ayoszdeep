@@ -1,16 +1,31 @@
-## Hi there 👋
+AyoszDeep/README.md
+```go
+package main
 
-<!--
-**Ayoszdeep22/Ayoszdeep22** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+import "fmt"
 
-Here are some ideas to get you started:
+type Developer struct {
+	Name           string
+	Role           string
+	Languages      []string
+	CurrentlyDoing string
+	FunFact        string
+}
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+func (d *Developer) SayHi() {
+	fmt.Println("Hey there 👋 Thanks for checking out my GitHub profile!")
+	fmt.Println("I love building scalable backend systems, AI-powered applications, and solving real-world problems.")
+}
+
+func main() {
+	me := Developer{
+		Name:           "Ayoszdeep Mishra",
+		Role:           "Backend & AI/ML Engineer",
+		Languages:      []string{"Go", "JavaScript", "Java", "Python", "SQL"},
+		CurrentlyDoing: "Building RAG pipelines, scalable REST APIs, and distributed systems",
+		FunFact:        "Solved 350+ DSA problems and obsessed with system design 🚀",
+	}
+
+	me.SayHi()
+}
+```
